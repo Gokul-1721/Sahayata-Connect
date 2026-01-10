@@ -2,12 +2,7 @@ const exp = require("express");
 const app = exp();
 
 app.use(exp.static("public"));
-const path = require("path");
 
-app.use(
-  "/event_img",
-  exp.static(path.join(__dirname, "public/event_img"))
-);
 
 
 
