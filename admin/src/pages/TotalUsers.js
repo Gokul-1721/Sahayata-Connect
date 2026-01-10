@@ -11,7 +11,7 @@ function TotalUsers() {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await fetch('${process.env.REACT_APP_API_URL}/details/all-users');
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/details/all-users`);
                 const data = await response.json();
                 setUsers(data);
             } catch (error) {

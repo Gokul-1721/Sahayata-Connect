@@ -31,7 +31,7 @@ function Addevent() {
         fd.append("eDetails", eDetails);
 
         try {
-            const resp = await fetch("${process.env.REACT_APP_API_URL}/event/add", {
+            const resp = await fetch(`${process.env.REACT_APP_API_URL}/event/add`, {
                 method: 'POST',
                 body: fd
             });

@@ -39,10 +39,10 @@ function Dashboard() {
         const fetchAllData = async () => {
             try {
                 const [statsRes, eventsMonthRes, userGrowthRes, eventPopularityRes] = await Promise.all([
-                    fetch("${process.env.REACT_APP_API_URL}/dashboard/stats"),
-                    fetch("${process.env.REACT_APP_API_URL}/dashboard/events-this-month"),
-                    fetch("${process.env.REACT_APP_API_URL}/dashboard/user-growth"),
-                    fetch("${process.env.REACT_APP_API_URL}/dashboard/event-popularity")
+                    fetch(`${process.env.REACT_APP_API_URL}/dashboard/stats`),
+                    fetch(`${process.env.REACT_APP_API_URL}/dashboard/events-this-month`),
+                    fetch(`${process.env.REACT_APP_API_URL}/dashboard/user-growth`),
+                    fetch(`${process.env.REACT_APP_API_URL}/dashboard/event-popularity`)
                 ]);
                 const statsData = await statsRes.json();
                 const eventsMonthData = await eventsMonthRes.json();

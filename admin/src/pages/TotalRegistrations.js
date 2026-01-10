@@ -11,7 +11,7 @@ function TotalRegistrations() {
     useEffect(() => {
         const fetchRegistrations = async () => {
             try {
-                const response = await fetch('${process.env.REACT_APP_API_URL}/details/all-registrations');
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/details/all-registrations`);
                 const data = await response.json();
                 setRegistrations(data);
             } catch (error) {

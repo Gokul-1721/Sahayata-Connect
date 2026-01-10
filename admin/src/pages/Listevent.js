@@ -7,7 +7,7 @@ function Listevent() {
     const [event, setEvent] = useState([]);
 
     const getdata = async () => {
-        const resp = await fetch("${process.env.REACT_APP_API_URL}/event/select");
+        const resp = await fetch(`${process.env.REACT_APP_API_URL}/event/select`);
         const data = await resp.json();
         setEvent(data);
     };
@@ -18,7 +18,7 @@ function Listevent() {
 
     const del = async (id) => {
         if (window.confirm("Are you sure?")) {
-            await fetch("${process.env.REACT_APP_API_URL}/event/delete/" + id, {
+            await fetch(`${process.env.REACT_APP_API_URL}/event/delete/` + id, {
                 method: 'DELETE'
             });
             getdata(); // Refresh the list
@@ -49,7 +49,7 @@ function Listevent() {
                                     <tr key={e._id}>
                                         <td>{e.eName}</td>
                                         <td>{e.eDate}</td>
-                                        <td><img className="eventimg" src={"${process.env.REACT_APP_API_URL}/event_img/" + e.eImage} alt={e.eName} /></td>
+                                        <td><img className="eventimg" src={`${process.env.REACT_APP_API_URL}/event_img/` + e.eImage} alt={e.eName} /></td>
                                         <td>{e.eVenue}</td>
                                         <td>{e.eDetails}</td>
                                         <td><button onClick={() => del(e._id)} className="btn btn-danger">Delete</button></td>
