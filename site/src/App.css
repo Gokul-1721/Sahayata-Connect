@@ -1,0 +1,718 @@
+/* --- Base and Auth Navbar Styles --- */
+.frm {
+    margin: 100px auto;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+.nav-user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-welcome {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+}
+.nav-logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.nav-logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* --- STABLE SLIDER STYLES --- */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Updated from 90vh */
+    overflow: hidden;
+}
+.slider-wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.slide-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.slide-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.slide-content p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+.cta-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* --- STABLE EVENTS SECTION STYLES --- */
+.events-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.section-header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.event-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+.event-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.event-content {
+    padding: 25px;
+}
+.event-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.event-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+.event-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.event-description {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+.join-btn {
+    display: inline-block;
+    background-color: #667eea;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+.join-btn:hover {
+    background-color: #5a6fd5;
+}
+
+/* --- STABLE EVENT DETAIL PAGE STYLES --- */
+.event-detail-container {
+    padding: 120px 20px 60px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.event-detail-card {
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 45% 1fr;
+}
+.event-detail-image-wrapper {
+    height: 100%;
+}
+.event-detail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.event-detail-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.event-detail-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.event-detail-meta {
+    display: flex;
+    gap: 30px;
+    color: #6c757d;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+.event-detail-meta span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.event-detail-meta i {
+    color: #667eea;
+}
+.event-detail-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #495057;
+    margin-bottom: 40px;
+    flex-grow: 1; /* Pushes buttons to the bottom */
+}
+.event-detail-actions {
+    display: flex;
+    gap: 20px;
+}
+.cta-btn.primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cta-btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+.cta-btn.secondary {
+    background-color: #e9ecef;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+.cta-btn.secondary:hover {
+    background-color: #ced4da;
+}
+
+/* --- PROFILE PAGE STYLES --- */
+.profile-container {
+    padding: 120px 20px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 180px); /* Adjust based on header/footer height */
+}
+.profile-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.profile-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.profile-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+.registrations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.registration-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 5px solid #667eea;
+}
+.registration-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+.event-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.event-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.countdown-tag {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: #fff;
+}
+.countdown-tag.upcoming {
+    background-color: #1cc88a;
+} /* Green */
+.countdown-tag.soon {
+    background-color: #f6c23e;
+} /* Yellow */
+.countdown-tag.today {
+    background-color: #e74a3b;
+} /* Red */
+.countdown-tag.past {
+    background-color: #858796;
+} /* Gray */
+
+.event-details-meta {
+    display: flex;
+    gap: 30px;
+    color: #777;
+    font-size: 0.95rem;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.meta-item i {
+    color: #667eea;
+}
+.no-registrations {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.no-registrations p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* --- SEARCH RESULTS PAGE STYLES --- */
+.search-results-container {
+    padding: 120px 20px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 180px);
+}
+.no-results {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+.no-results h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.no-results p {
+    font-size: 1.1rem;
+    color: #666;
+}
+.search-results-container .events-grid {
+    padding: 0;
+}
+
+@media (max-width: 800px) {
+    .event-detail-card {
+        grid-template-columns: 1fr;
+    }
+    .event-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+
+/* --- NEW, FROM-SCRATCH SEARCH OVERLAY STYLES --- */
+.search-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-icon-btn {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+.search-icon-btn:hover {
+    color: #ddd;
+}
+
+.search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.search-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.close-search-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 3rem;
+    color: #aaa;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.close-search-btn:hover {
+    color: white;
+}
+
+.search-overlay-content {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    gap: 15px;
+}
+
+.search-overlay-input {
+    width: 100%;
+    height: 60px;
+    border: 2px solid #667eea;
+    border-radius: 30px;
+    padding: 0 25px;
+    font-size: 1.2rem;
+    background-color: #222;
+    color: white;
+    outline: none;
+}
+
+.search-overlay-btn {
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.search-overlay-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* --- Existing Styles --- */
+/* (All previous styles remain here) */
+.frm { margin: 100px auto; border:2px solid #ccc; padding:20px; }
+/* ... other existing styles ... */
+.no-registrations p { font-size: 1.1rem; color: #666; margin-top: 10px; }
+
+
+/* --- NEW, FROM-SCRATCH DONATION PAGE STYLES --- */
+.donate-page-container {
+    padding: 120px 20px 60px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-card {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.donate-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.donate-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.donate-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.amount-selection, .donor-info, .payment-info {
+    margin-bottom: 30px;
+}
+
+.amount-selection h3, .donor-info h3, .payment-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.preset-amounts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.amount-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #f8f9fa;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.amount-btn:hover {
+    background-color: #e9ecef;
+}
+
+.amount-btn.selected {
+    background-color: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.custom-amount {
+    margin-top: 20px;
+}
+
+.custom-amount label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.custom-amount-input {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+.custom-amount-input:focus-within {
+    border-color: #667eea;
+}
+
+.custom-amount-input span {
+    padding: 0 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #777;
+}
+
+.custom-amount-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    background: transparent;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.donate-submit-btn {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.donate-submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.donation-success {
+    text-align: center;
+}
+.success-icon {
+    font-size: 5rem;
+    color: #1cc88a;
+    margin-bottom: 20px;
+}
+.donation-success h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.donation-success p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* --- STYLES FOR PROFILE PAGE LAYOUT --- */
+
+.profile-page-container {
+    padding: 120px 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.profile-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Styles for the message when no events are registered */
+.no-registrations {
+    grid-column: 1 / -1; /* This makes the message span the full width of the grid */
+    text-align: center;
+    padding: 50px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
