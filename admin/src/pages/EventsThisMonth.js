@@ -12,7 +12,7 @@ function EventsThisMonth() {
         const fetchMonthlyEvents = async () => {
             try {
                 // We will create this API endpoint in the backend steps
-                const response = await fetch('http://localhost:2000/dashboard/detailed-events-this-month');
+                const response = await fetch('${process.env.REACT_APP_API_URL}/dashboard/detailed-events-this-month');
                 const data = await response.json();
                 setEvents(data);
             } catch (error) {

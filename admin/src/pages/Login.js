@@ -12,7 +12,7 @@ function Login() {
         var fd = new FormData();
         fd.append("email", email);
         fd.append("pass", pass);
-        var resp = await fetch("http://localhost:2000/admin/login", {
+        var resp = await fetch("${process.env.REACT_APP_API_URL}/admin/login", {
             method: 'POST',
             body: fd
         });

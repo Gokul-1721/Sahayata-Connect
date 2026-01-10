@@ -39,10 +39,10 @@ function Dashboard() {
         const fetchAllData = async () => {
             try {
                 const [statsRes, eventsMonthRes, userGrowthRes, eventPopularityRes] = await Promise.all([
-                    fetch("http://localhost:2000/dashboard/stats"),
-                    fetch("http://localhost:2000/dashboard/events-this-month"),
-                    fetch("http://localhost:2000/dashboard/user-growth"),
-                    fetch("http://localhost:2000/dashboard/event-popularity")
+                    fetch("${process.env.REACT_APP_API_URL}/dashboard/stats"),
+                    fetch("${process.env.REACT_APP_API_URL}/dashboard/events-this-month"),
+                    fetch("${process.env.REACT_APP_API_URL}/dashboard/user-growth"),
+                    fetch("${process.env.REACT_APP_API_URL}/dashboard/event-popularity")
                 ]);
                 const statsData = await statsRes.json();
                 const eventsMonthData = await eventsMonthRes.json();
@@ -69,7 +69,7 @@ function Dashboard() {
     useEffect(() => {
         const fetchRecentEvents = async () => {
             try {
-                const response = await fetch(`http://localhost:2000/dashboard/recent-events?limit=${tableLimit}`);
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/dashboard/recent-events?limit=${tableLimit}`);
                 const data = await response.json();
                 setRecentEvents(data);
             } catch (error) {
