@@ -2,7 +2,13 @@ const exp = require("express");
 const app = exp();
 
 app.use(exp.static("public"));
-app.use("/event_img", exp.static("public/event_img"));
+const path = require("path");
+
+app.use(
+  "/event_img",
+  exp.static(path.join(__dirname, "public/event_img"))
+);
+
 
 
 const cors = require("cors");
